@@ -1,9 +1,34 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
 }
+
+@media only screen and (max-width: 600px) {
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .header, ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-p {
+        margin: auto;
+        text-align: center;
+    }
+
+  }
 
 /* Header */
 .header, .section-1 {
@@ -35,6 +60,9 @@ ul {
 
 li {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 a {
@@ -50,7 +78,9 @@ a:hover {
 .section-1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
+    padding-bottom: 20px;
 }
 
 .left-content, .right-img {
@@ -61,22 +91,85 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
 }
 
 .saz {
     max-width: 500px;
-    min-width: 300px;
+    min-width: 100px;
 }
 
 .hero-main {
     font-size: 30px;
     color:#8021a6;
-    text-align: left;
-    margin: 0;
+    margin: 0px;
 }
 
 .hero-secondary {
-    text-align: left;
     color:#8021a6;
     font-size: 18px;
+}
+
+.hero-button {
+    background-color: #8021a6;
+    padding: 10px;
+    max-width: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-link {
+    color: #f5b218;
+    animation: blinker .5s linear infinite;
+}
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+/* Section 2 */
+.section-2 {
+    background-color: #e597e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero-two {
+    text-align: center;
+    color: #eb2d07;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.row {
+    width: 200px;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.subtitle {
+    color: #eb2d07;
 }
