@@ -10,6 +10,16 @@ body {
     background-color: lightyellow;
 }
 
+/*
+1. Fix scroll bar color and padding on mobile
+2. check boxes and buttons that text overflow from
+3. optimize for iphone/android, ipad, and desktop
+4. fix wide gap in mobile size nav menu
+5. at narrowest size, header aligns to right
+6. in Turkish text in section 2 boxes disrupts alignment
+7. at smallest size, quote leaves screen
+8. at smallest size, footer not aligned */
+
 @media only screen and (max-width: 600px) {
     .section-1 {
         display: flex;
@@ -31,7 +41,13 @@ body {
         padding-bottom: 10px;;
         text-align: center;
     }
-
+    .header {
+        padding: 20px 10px;
+    }
+    .section-1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
   }
 
@@ -108,7 +124,7 @@ a:hover {
 
 .saz {
     max-width: 500px;
-    min-width: 100px;
+    min-width: 300px;
 }
 
 .hero-main {
@@ -178,6 +194,7 @@ a:hover {
 
 .subtitle {
     color: #eb2d07;
+    text-wrap: wrap;
 }
 
 /* Section 3 */
