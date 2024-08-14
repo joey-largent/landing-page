@@ -1,0 +1,48 @@
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+}
+
+/* Header */
+.header, .section-1 {
+    background-color: #f5b218;
+}
+
+.header-p {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #950cc7;
+}
+
+.header {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+
+.header-p {
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #950cc7;
+}
+
+a:hover {
+    background-color: magenta;
+}
+
+
